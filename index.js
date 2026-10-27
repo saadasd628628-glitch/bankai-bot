@@ -1,12 +1,7 @@
-const { Client, GatewayIntentBits } = require('discord.js');
-const express = require('express');
-const app = express();
+
 
 app.get('/', (req, res) => res.send('Bankai Bot is Live!'));
 app.listen(3000, () => console.log('Web server is running'));
-
-const client = new Client({ 
-  intents: [
     GatewayIntentBits.Guilds,
     GatewayIntentBits.GuildMessages,
     GatewayIntentBits.MessageContent
